@@ -1,8 +1,19 @@
 html{
-    background:purple;
+    background: url("img/Stars.jpg");
 }
 body{
-    background: white;
-    margin: 25px 100px;
-    padding: 30px 50px;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 25px auto;
+    padding: 30px 75px;
+    border-radius:30px ;
+    width: 750px;
+
+}
+
+img {
+    width: 500px;
+    padding: 0px 100px
+}
+input{
+    width: 665px;
 }
