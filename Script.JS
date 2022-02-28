@@ -8,6 +8,12 @@ document.getElementById("M8B.png").addEventListener("click", Answer)
 function Answer(){
    if (questionIn.value ==="") {
        Span.innerHTML = "Please ask a question."
+   } else if (questionIn.value === "Does a magic 8 ball actually work?") {
+       Span.innerHTML = "How dare you doubt me!"
+   } else if (questionIn.value === "Is JavaScript awesome?"){
+       Span.innerHTML = "Of course!"
+   } else if (questionIn.value === "Is Michael an absolute stud?") {
+       Span.innerHTML = "Evidence points to yes."
    } else {
        let random = Math.random()
        if (random < 0.2){
@@ -16,6 +22,10 @@ function Answer(){
            Span.innerHTML = "As I see it, yes."
        } else if (random < 0.6) {
            Span.innerHTML = "Concentrate and ask again."
+       } else if (random < 0.8) {
+           Span.innerHTML = "Don't count on it. "
+       } else {
+           Span.innerHTML = "Outlook not so good"
        }
    } 
 }
